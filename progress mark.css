@@ -1,0 +1,82 @@
+*{
+    font-size: 17px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 35%;
+    margin: auto;
+    margin-top: 18%;
+}
+
+.container div button{
+    margin: 11px;
+}
+.mark{
+    border: 2px solid darkgrey;
+    border-radius: 11px;
+    transition: border-color 0.2s 0.4s;
+}
+
+#progressLine{
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+#progressLine div.mark{
+    text-align: center;
+    width: 1.2rem;
+}
+
+.betweenMarks{
+    width: 4rem;
+    height: 3px;
+    position: relative;
+    top: 9px;
+    display: inline;
+    background-color: darkgrey;
+    transition: background-color 0.7s ease-in-out;
+}
+.buttons{
+    display: flex;
+    align-self: center;
+}
+button{
+    border-radius: 4px;
+    width: 5rem;
+    height: 1.9rem; 
+    border: 0px;
+    color:dimgrey ;
+
+}
+button#next{
+    background-color: #0073ff;
+    color: white;
+}
+
+#next:hover{
+    background-color: white;
+    color: #007bff;
+    border : 2px solid #0073ff
+}
+
+.previousActive{
+    background-color:dimgrey ;
+    color: white;
+}
+.previousActive:hover{
+    color: black;
+    background-color: darkgray;
+    border: 2px solid black;
+
+}
+
+.activeStep,#mark1{
+   border-color: #0073ff;
+}
+
+.activeBetweenStep{
+    background-color: #0073ff;
+}
